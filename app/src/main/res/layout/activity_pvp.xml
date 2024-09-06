@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/field"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/plane_foreground"
+    android:orientation="vertical"
+    tools:context=".Activity_pvp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Игрок №1"
+            android:id="@+id/player_one_state"
+            android:rotation="180"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/game_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:rotation="-90"
+            android:singleLine="true"
+            android:text="Начнем!"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/rope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@mipmap/rope_multiple_foreground" />
+
+        <ImageView
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="60pt"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@mipmap/separator_foreground" />
+
+        <TextView
+            android:text="Игрок №2"
+            android:textSize="30sp"
+            android:id="@+id/player_two_state"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>
